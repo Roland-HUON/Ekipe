@@ -18,7 +18,10 @@
     </div>
     <section id="home-view" class="h-full">
       <div class="h-full flex flex-col justify-center items-center">
-        <div class="w-fit-content h-fit-content p-8 bg-white rounded-lg shadow-md opacity-75">
+        <div class="w-fit-content h-fit-content p-8 bg-white rounded-lg shadow-md opacity-75 relative">
+          <div class="absolute right-[-20px] top-[-20px] p-4 bg-indigo-900 rounded-full shadow-md text-white rotate-[20deg] w-[50px] h-[50px] flex justify-center items-center">
+            <p>VS</p>
+          </div>
           <h1 class="text-3xl font-bold text-center mb-12">Ajouter un joueur</h1>
           <form id="player-form" class="flex flex-col items-center space-y-4">
             <input id="player-name" type="text" placeholder="Nom du joueur" required
@@ -60,7 +63,7 @@
     </div>
   </div>
 
-  <footer class="fixed bottom-0 left-0 w-full bg-white border-t flex justify-around py-3">
+  <footer class="fixed bottom-0 left-0 w-full bg-white flex justify-around py-3">
     <button onclick="showView('home-view')" class="text-blue-600 font-semibold">🏠 Accueil</button>
     <button onclick="showView('teams-view')" class="text-blue-600 font-semibold">👥 Équipes</button>
     <button onclick="showView('ranking-view')" class="text-blue-600 font-semibold">📊 Classement</button>

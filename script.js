@@ -129,7 +129,7 @@ function updateRanking() {
 
       const membersList = document.createElement('ul');
       membersList.className = 'mt-2 text-sm text-gray-600 hidden';
-      membersList.innerHTML = t.members.map(m => `<li>${m}</li>`).join('');
+      membersList.innerHTML = t.members.map(m => `<li class="font-bold text-amber-500">${m}</li>`).join('');
       div.appendChild(membersList);
 
       div.addEventListener('click', () => {
