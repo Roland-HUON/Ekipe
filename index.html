@@ -7,17 +7,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
-  <main id="app" class="container mx-auto p-4 space-y-6 pb-24 h-screen">
-    <div class="absolute top-0 left-0 w-full h-full -z-10">
-      <div class="w-full h-[50vh] bg-white">
-        <img src="vs.gif" alt="logo" class="w-full h-full object-cover object-left">
-      </div>
-      <div class="w-full h-[50vh] bg-white">
-        <img src="vs.gif" alt="logo" class="w-full h-full object-cover object-right">
-      </div>
-    </div>
-    <section id="home-view" class="h-full">
-      <div class="h-full flex flex-col justify-center items-center">
+  <main id="app" class="container mx-auto p-4 space-y-6 pb-24 h-screen overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full -z-10 bg-[#191970]"></div>
+    <section id="home-view" class="h-full flex flex-col gap-8 justify-center items-center">
+      <div class="h-fit-content flex flex-col justify-center items-center">
         <div class="w-fit-content h-fit-content p-8 bg-white rounded-lg shadow-md opacity-75 relative">
           <div class="absolute right-[-20px] top-[-20px] p-4 bg-indigo-900 rounded-full shadow-md text-white rotate-[20deg] w-[50px] h-[50px] flex justify-center items-center">
             <p>VS</p>
@@ -35,12 +28,12 @@
         </div>
       </div>
       <button id="generate-teams" disabled
-              class="fixed bottom-[140px] right-[25px] bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 w-fit-content">
+              class="max-w-[340px] bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 w-full">
         Faire les équipes
       </button>
-      <div class="fixed bottom-[70px] right-[25px] flex gap-2 justify-center mt-4">
-        <button id="undo-btn" class="bg-yellow-500 bg-green-600 text-white px-6 py-3 rounded-full w-fit-content hover:bg-yellow-600">Retour</button>
-        <button id="reset-btn" class="bg-red-600 bg-green-600 text-white px-6 py-3 rounded-full w-fit-content hover:bg-red-700">Reset</button>
+      <div class="max-w-[340px] flex gap-4 justify-center w-full">
+        <button id="undo-btn" class="bg-yellow-500 bg-green-600 text-white px-6 py-3 rounded-full w-full hover:bg-yellow-600">Retour</button>
+        <button id="reset-btn" class="bg-red-600 bg-green-600 text-white px-6 py-3 rounded-full w-full hover:bg-red-700">Reset</button>
       </div>
     </section>
 
